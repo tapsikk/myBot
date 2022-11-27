@@ -1,13 +1,13 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder } = require("discord.js");
 
 module.exports = {
-	data: new SlashCommandBuilder()
+  data: new SlashCommandBuilder()
     // имя команды
-		.setName('ping')
+    .setName("ping")
     // описание команды
-		.setDescription('Replies with Pong!'),
-	async execute(interaction) {
+    .setDescription("Replies with Pong!"),
+  async execute(interaction) {
     // действие команды
-		await interaction.reply('Pong!');
-	},
+    await interaction.reply("Pong!");
+  },
 };
